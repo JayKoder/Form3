@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    background-color: #F9F8F9;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 602px;
+    margin: 150px auto 0;
+    border-radius: 20px;
+}
+
+.signup-form, .signup-image {
+    margin: auto;
+}
+
+.signin-form, .signin-image {
+    margin: auto;
+}
+
+.signup-image a, .signin-image a {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #999999;
+    outline: 0;
+}
