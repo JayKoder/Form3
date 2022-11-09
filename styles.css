@@ -16,7 +16,8 @@ html body {
 
 section {
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
     background-color: #FFFFFF;
     width: 900px;
     height: 602px;
@@ -25,23 +26,63 @@ section {
 }
 
 .signup-form, .signup-image {
-    margin: auto;
+    flex-basis: 50%;
+    padding: 20px 10px;
 }
 
-.signin-form, .signin-image {
-    margin: auto;
+.signup-form {
+    display: flex;
+    flex-flow: column;
+    justify-content:space-around;
+    align-items:center
 }
 
-.signup-image a, .signin-image a {
-    display: block;
+.signup-image {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-label {
-    display: block;
+h1 {
+width: 70%;
+margin: 20px auto;
+}
+
+form {
+    margin: 0 auto;
+}
+
+/* input i {
+    position: absolute;
+} */
+
+form div {
+    margin-top: 30px;
 }
 
 input {
+    width: 100%;
     border: none;
     border-bottom: 1px solid #999999;
     outline: 0;
+    padding: 10px;
 }
+
+
+
+.terms-input-container input {
+    width: auto;
+}
+
+
+
+
+
+
+.socials-container {
+    display: flex;
+}
+
+
+
